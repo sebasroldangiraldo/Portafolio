@@ -1,0 +1,93 @@
+@import "../../../styles/variables.scss";
+
+.container {
+    width: 50%;
+    background-color: $white-color;
+    padding: 1.5rem;
+    border-bottom: 0.1rem solid $light-gray-color;
+    margin-top: 2rem;
+
+    .user {
+        width: 100%;
+        height: 2rem;
+        display: flex;
+        background-color: $white-color;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+
+        .username {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .verified {
+            color: rgb(0, 145, 255);
+        }
+    }
+
+    .userHeader {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: $white-color;
+
+        .imageContainer {
+            width: 20%;
+    
+            .image {
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .metricsContainer {
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+
+        .data {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .metric {
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+    }
+
+    .userDescription {
+        margin-top: 0.5rem;
+
+        .title {
+            font-size: 1.2rem;
+        }
+
+        .description {
+            font-weight: 300;
+            font-size: 0.9;
+        } 
+    }
+
+    .userLinks {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+
+        .anchor {
+            text-decoration: none;
+            color: $white-color;
+            padding: 0.5rem 4rem;
+            background-color: $dark-blue-color;
+            border-radius: 2rem;
+
+            &:hover {
+                color: $cian-color;
+            }
+        }
+    }
+}
